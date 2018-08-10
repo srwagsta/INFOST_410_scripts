@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: mysql_server_test
+    container_name: mysql_server_1
+    ports:
+      - 3306:3306
+    volumes:
+      - ../script_files:/script_files
+      - ./sql_backup:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'toor'
+      MYSQL_USER: 'wagstaff'
+      MYSQL_PASSWORD: 'mypass'
+      MYSQL_DATABASE: 'wagstaff_INFOST_410'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+#    command: /start
