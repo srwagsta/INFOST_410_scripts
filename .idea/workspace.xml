@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/Dockerfile" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start" afterPath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/.idea/MySQL_Docker.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/Dockerfile" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/MySql/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/mysql.yml" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/compose.yml" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/requirements.txt" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start" />
       <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" />
       <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" />
     </list>
@@ -22,45 +29,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="execute_sql_script.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="txt2pdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/txt2pdf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="343" selection-end-column="14" />
-              <folding>
-                <element signature="e#48#63#0" expanded="true" />
-                <element signature="e#7564#10701#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="start" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start">
+        <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySql_assignments/MySQL_Docker/mysql.yml">
+      <file leaf-file-name="compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="406">
+              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQL_assignment_2_script.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/SQL_assignment_2_script.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1729">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -78,7 +70,14 @@
         <option value="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start" />
         <option value="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf.py" />
         <option value="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/txt2pdf.py" />
+        <option value="$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Premier.Script.sql" />
+        <option value="$PROJECT_DIR$/MySql_assignments/MySQL_Docker/mysql.yml" />
         <option value="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" />
+        <option value="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/requirements.txt" />
+        <option value="$PROJECT_DIR$/MySql_assignments/Docker/MySql/Dockerfile" />
+        <option value="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start" />
+        <option value="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/Dockerfile" />
+        <option value="$PROJECT_DIR$/MySql_assignments/Docker/compose.yml" />
       </list>
     </option>
   </component>
@@ -142,6 +141,12 @@
               <item name="INFOST_410_scripts" type="b2602c69:ProjectViewProjectNode" />
               <item name="INFOST_410_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="MySql_assignments" type="462c0819:PsiDirectoryNode" />
+              <item name="Docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFOST_410_scripts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFOST_410_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="MySql_assignments" type="462c0819:PsiDirectoryNode" />
               <item name="script_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -149,7 +154,7 @@
               <item name="INFOST_410_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="MySql_assignments" type="462c0819:PsiDirectoryNode" />
               <item name="script_files" type="462c0819:PsiDirectoryNode" />
-              <item name="txt2pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,7 +170,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6" />
+      <recent name="$PROJECT_DIR$/MySql_assignments/Docker/MySql" />
       <recent name="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" />
       <recent name="$PROJECT_DIR$/MySql_assignments/script_files" />
     </key>
@@ -210,6 +220,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17446809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -219,7 +230,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -231,30 +241,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MySql_assignments/MySQL_Docker/mysql.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/output_files/StephenWagstaff.SQL.A2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySql_assignments/MySQL_Docker/start">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -275,17 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/txt2pdf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="343" selection-end-column="14" />
-          <folding>
-            <element signature="e#48#63#0" expanded="true" />
-            <element signature="e#7564#10701#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/output_files/SQL1.StephenWagstaff.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -294,13 +279,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Premier.Script.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3286">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/txt2pdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#63#0" expanded="true" />
+            <element signature="e#7564#10701#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/entrypoint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-411">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/MySql/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="-461">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding>
-            <element signature="e#25#47#0" expanded="true" />
+            <element signature="e#26#48#0" expanded="true" />
+            <element signature="e#2030#2912#0" expanded="false" />
+            <element signature="e#2971#4288#0" expanded="false" />
+            <element signature="e#4340#5345#0" expanded="false" />
+            <element signature="e#5368#5990#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/SQL_assignment_2_script.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1729">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/Docker/compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

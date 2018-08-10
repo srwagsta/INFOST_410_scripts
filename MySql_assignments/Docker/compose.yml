@@ -1,0 +1,35 @@
+version: '3'
+
+volumes:
+  local_mysql_backup: {}
+
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: MySql/Dockerfile
+    image: mysql_server
+    container_name: mysql_server
+    ports:
+      - 3306:3306
+    volumes:
+      - local_mysql_backup:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'toor'
+      MYSQL_USER: 'wagstaff'
+      MYSQL_PASSWORD: 'mypass'
+      MYSQL_DATABASE: 'wagstaff_INFOST_410'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+
+  python3:
+    build:
+      context: .
+      dockerfile: Python3.6/Dockerfile
+    image: ubuntu
+    container_name: ubuntu
+    depends_on:
+      - mysql
+    volumes:
+      - ../script_files:/script_files
+    stdin_open: true
+    tty: true
