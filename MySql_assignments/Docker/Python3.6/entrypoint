@@ -1,0 +1,25 @@
+#!/bin/bash
+
+db_ready() {
+python << END
+import sys
+import mysql.connector
+
+try:
+    mysql.connector.connect(host="mysql",
+                            user="wagstaff",
+                            password="mypass",
+                            auth_plugin='mysql_native_password')
+except mysql.connector.Error:
+    sys.exit(-1)
+sys.exit(0)
+
+END
+}
+until db_ready; do
+  >&2 echo 'Waiting for MySql to become available...'
+  sleep 1
+done
+>&2 echo 'MySql is available'
+
+exec "$@"

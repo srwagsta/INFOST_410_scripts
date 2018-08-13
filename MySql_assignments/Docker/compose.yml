@@ -31,5 +31,4 @@ services:
       - mysql
     volumes:
       - ../script_files:/script_files
-    stdin_open: true
-    tty: true
+    command: /start

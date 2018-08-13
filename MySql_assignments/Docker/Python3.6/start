@@ -1,2 +1,4 @@
 #!/bin/bash
+
 python3 /script_files/execute_sql_script.py
+

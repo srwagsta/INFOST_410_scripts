@@ -15,3 +15,10 @@ RUN pip install --upgrade pip \
 COPY ./Python3.6/start /start
 RUN sed -i 's/\r//' /start
 RUN chmod +x /start
+
+COPY ./Python3.6/entrypoint /entrypoint
+RUN sed -i 's/\r//' /entrypoint
+RUN chmod +x /entrypoint
+
+ENTRYPOINT ["/entrypoint"]
+

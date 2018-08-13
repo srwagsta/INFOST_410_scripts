@@ -4,14 +4,15 @@ from argparse import Namespace
 from tabulate import tabulate
 from txt2pdf.txt2pdf import PDFCreator, Margins
 import os
+import datetime
 
 AUTHOR = 'Stephen Wagstaff'
 SUBJECT = 'INFOST 410 SQL Assignment'
 TITLE = 'INFOST 410 SQL Assignment'
 OUTPUT_FILE_HEADER = f'Author: {AUTHOR}\n' \
-                     'License: Apache-2.0\n' \
-                     'Version: 1.0\n' \
-                     'Creation Date: Aug 09, 2018'
+                     f'License: Apache-2.0\n' \
+                     f'Version: 1.0\n' \
+                     f'Creation Date: {datetime.datetime.now().strftime("%Y-%m-%d")}'
 
 DB_AUTH_DICTIONARY = {'host': 'mysql',
                       'user': 'wagstaff',
@@ -125,21 +126,16 @@ def __create_pdf_output(txt_path, pdf_path):
 
 
 def run_main():
-    user_selection = 0
-    while True:
+
+    for user_selection in FILE_DICTIONARY:
         try:
-            user_selection = int(input("\nWhat Assignment (1, 2, or 3)? "))
-        except ValueError:
-            print('Please enter a valid number value.')
+            if __setup_db(DB_SETUP_FILE) and __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
+                                                                  FILE_DICTIONARY[user_selection]['output_path']):
 
-        if 0 < user_selection < 4:
-            break
-
-    if __setup_db(DB_SETUP_FILE) and __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
-                                                          FILE_DICTIONARY[user_selection]['output_path']):
-
-        __create_pdf_output(FILE_DICTIONARY[user_selection]['output_path'],
-                            FILE_DICTIONARY[user_selection]['output_path'].replace('.txt', '.pdf'))
+                __create_pdf_output(FILE_DICTIONARY[user_selection]['output_path'],
+                                    FILE_DICTIONARY[user_selection]['output_path'].replace('.txt', '.pdf'))
+        except FileNotFoundError as E:
+            print(f"File not found: {E}")
 
 
 if __name__ == '__main__':
