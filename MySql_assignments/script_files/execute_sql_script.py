@@ -40,13 +40,15 @@ def __setup_db(initialization_file_path):
         _db_connect = mysql.connector.connect(host=DB_AUTH_DICTIONARY['host'],
                                               user=DB_AUTH_DICTIONARY['user'],
                                               password=DB_AUTH_DICTIONARY['password'],
-                                              database=DB_AUTH_DICTIONARY['database'],
                                               auth_plugin='mysql_native_password')
         input_file = open(initialization_file_path, 'r')
         query = " ".join(input_file.readlines())
+        query = query.replace('\n', '')
+        query = query.split(';')
 
         _context = _db_connect.cursor()
-        _context.execute(query)
+        for action in query:
+            _context.execute(action)
     except mysql.connector.Error as err:
         print(f"Database has already been setup: {err}")
         return False
@@ -54,6 +56,7 @@ def __setup_db(initialization_file_path):
         print(f"Database has already been setup: {err}")
         return False
     else:
+        _db_connect.commit()
         _db_connect.close()
         return True
 
@@ -63,7 +66,6 @@ def __execute_sql_script(script_path, output_path):
         _db_connect = mysql.connector.connect(host=DB_AUTH_DICTIONARY['host'],
                                               user=DB_AUTH_DICTIONARY['user'],
                                               password=DB_AUTH_DICTIONARY['password'],
-                                              database=DB_AUTH_DICTIONARY['database'],
                                               auth_plugin='mysql_native_password')
         input_file = open(script_path, 'r')
         output_file = open(output_path, 'w')
@@ -133,10 +135,8 @@ def run_main():
         if 0 < user_selection < 4:
             break
 
-    __setup_db(DB_SETUP_FILE)
-
-    if __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
-                            FILE_DICTIONARY[user_selection]['output_path']):
+    if __setup_db(DB_SETUP_FILE) and __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
+                                                          FILE_DICTIONARY[user_selection]['output_path']):
 
         __create_pdf_output(FILE_DICTIONARY[user_selection]['output_path'],
                             FILE_DICTIONARY[user_selection]['output_path'].replace('.txt', '.pdf'))
