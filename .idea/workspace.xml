@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/entrypoint" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/MySql_assignments/README.rst" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/Dockerfile" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/Dockerfile" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6/start" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/Docker/compose.yml" afterPath="$PROJECT_DIR$/MySql_assignments/Docker/compose.yml" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" />
+      <change beforePath="$PROJECT_DIR$/MySql_assignments/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
       <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +36,7 @@
         </entry>
       </file>
       <file leaf-file-name="README.rst" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MySql_assignments/README.rst">
+        <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1140">
               <caret line="61" column="64" lean-forward="false" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
@@ -163,6 +157,7 @@
       <recent name="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/MySql_assignments/Docker/Python3.6" />
       <recent name="$PROJECT_DIR$/MySql_assignments/Docker/MySql" />
       <recent name="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" />
@@ -372,7 +367,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySql_assignments/README.rst">
+    <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="61" column="64" lean-forward="false" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
