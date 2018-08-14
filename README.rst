@@ -53,6 +53,19 @@ To confirm all containers have exited, use this command::
   $ docker ps
 
 
+Demonstrating Docker Networks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As an example of Networking within Docker and Docker Compose, the *compose.yml* file contains two Networks
+(*frontend* and *backend*) currently both the MySql container and the Ubuntu container use the *backend*
+network. *This does cause Docker to issue a warning, but this is only a demonstration so feel free to ignore
+the warning.* If you change either of the container to the *backend* network from withing the *compose.yml*
+file you will notice that the Ubuntu container will continue to look for the MySql contain but it will never
+find the database. This is because now they are on different networks and the Ubuntu container can no longer
+resolve the ip address for the database via the *mysql* reference. See more information on `Docker Networks`_.
+
+.. _`Docker Networks`: https://docs.docker.com/compose/networking/
+
 
 Docker
 ^^^^^^

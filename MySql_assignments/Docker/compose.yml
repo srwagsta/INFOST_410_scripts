@@ -10,6 +10,8 @@ services:
       dockerfile: MySql/Dockerfile
     image: mysql_server
     container_name: mysql_server
+    networks:
+      - backend
     ports:
       - 3306:3306
     volumes:
@@ -27,8 +29,23 @@ services:
       dockerfile: Python3.6/Dockerfile
     image: ubuntu
     container_name: ubuntu
+    networks:
+      - backend
     depends_on:
       - mysql
     volumes:
       - ../script_files:/script_files
     command: /start
+
+networks:
+    backend:
+        # use the bridge driver, but enable IPv6
+        driver: bridge
+        driver_opts:
+            com.docker.network.enable_ipv6: "true"
+
+    frontend:
+        # use the bridge driver, but enable IPv6
+        driver: bridge
+        driver_opts:
+            com.docker.network.enable_ipv6: "true"
