@@ -30,10 +30,18 @@ FILE_DICTIONARY = {1: {'script_path': os.path.join(os.path.dirname(os.path.realp
                    3: {'script_path': os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                                    'sql_scripts', 'SQL_assignment_3_script.sql'),
                        'output_path': os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                                   'output_files', AUTHOR.replace(' ', '') + '.SQL.A3.txt')}}
+                                                   'output_files', AUTHOR.replace(' ', '') + '.SQL.A3.txt')},
+                   4: {'script_path': os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                                   'sql_scripts', 'Final_Exam_Script.sql'),
+                       'output_path': os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                                   'output_files', AUTHOR.replace(' ', '') + '.FINAL.txt')}
+                   }
 
-DB_SETUP_FILE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+ASSIGNMENT_DB_SETUP_FILE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                              'sql_scripts', 'Premier.Script.sql')
+
+FINAL_DB_SETUP_FILE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                             'sql_scripts', 'Final_Premier.Script.sql')
 
 
 def __setup_db(initialization_file_path):
@@ -129,8 +137,10 @@ def run_main():
 
     for user_selection in FILE_DICTIONARY:
         try:
-            if __setup_db(DB_SETUP_FILE) and __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
-                                                                  FILE_DICTIONARY[user_selection]['output_path']):
+            setup_file = FINAL_DB_SETUP_FILE if 'FINAL' in FILE_DICTIONARY[user_selection]['script_path'].upper() \
+                else ASSIGNMENT_DB_SETUP_FILE
+            if __setup_db(setup_file) and __execute_sql_script(FILE_DICTIONARY[user_selection]['script_path'],
+                                                               FILE_DICTIONARY[user_selection]['output_path']):
 
                 __create_pdf_output(FILE_DICTIONARY[user_selection]['output_path'],
                                     FILE_DICTIONARY[user_selection]['output_path'].replace('.txt', '.pdf'))
