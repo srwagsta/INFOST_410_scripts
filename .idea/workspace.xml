@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/execute_sql_script.py" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf" />
-    </list>
+    <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Final_Exam_Script.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Final_Exam_Script.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Final_Exam_Script.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2730">
               <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/LICENSE.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -103,6 +109,7 @@
         <option value="$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Final_Premier.Script.sql" />
         <option value="$PROJECT_DIR$/MySql_assignments/Docker/compose.yml" />
         <option value="$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Final_Exam_Script.sql" />
+        <option value="$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/LICENSE.txt" />
       </list>
     </option>
   </component>
@@ -173,7 +180,7 @@
               <item name="INFOST_410_scripts" type="462c0819:PsiDirectoryNode" />
               <item name="MySql_assignments" type="462c0819:PsiDirectoryNode" />
               <item name="script_files" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="txt2pdf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -428,6 +435,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
           <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql_assignments/script_files/txt2pdf/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
