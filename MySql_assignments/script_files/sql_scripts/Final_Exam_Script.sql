@@ -34,7 +34,7 @@ publisher with the publisher code SC **/
 SELECT BookCode, Title
 FROM Book
 WHERE Type = 'SFI'
-OR PublisherCode = SC;
+OR PublisherCode = 'SC';
 
 /** List the book code, book title, and price of each book with a price between $20 and $30 **/
 SELECT DISTINCT Book.BookCode, Book.Title, Copy.Price
@@ -122,7 +122,7 @@ JOIN Copy
 ON Book.BookCode = Copy.BookCode
 WHERE ('Average_Price' > 10 AND Book.Paperback = 'Y') OR ('Average_Price' < 10)
 GROUP BY Book.Type;
--- TODO: THE STATEMENT ABOVE IS WRONG
+-- TODO: THE STATEMENT ABOVE IS WRONG, AND THE STATEMENT BELOW CAUSES AN OUT OF SYNC ERROR
 
 /** What is the most expensive book in the database? **/
 SELECT DISTINCT Book.BookCode, Book.Title, Copy.Price
