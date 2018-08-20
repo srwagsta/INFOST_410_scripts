@@ -115,14 +115,40 @@ WHERE Book.Paperback = 'Y'
 GROUP BY Book.Type;
 
 /** For each type of the book, list the type and the average price, but consider only paperback books for those
-types for which the average price is more than $10 **/
-SELECT Book.Type, AVG(Copy.Price) AS 'Average_Price'
+types for which the average price is more than $10
+(Note: My understanding of this question is to show the average for only paperback book if the overall average is
+greater than 10 else show the overall average) **/
+SELECT T1.Type, T1.Average_Price AS 'Average_Price'
+FROM
+(SELECT Book.Type, AVG(Copy.Price)  AS 'Average_Price'
 FROM Book
 JOIN Copy
 ON Book.BookCode = Copy.BookCode
-WHERE ('Average_Price' > 10 AND Book.Paperback = 'Y') OR ('Average_Price' < 10)
-GROUP BY Book.Type;
--- TODO: THE STATEMENT ABOVE IS WRONG, AND THE STATEMENT BELOW CAUSES AN OUT OF SYNC ERROR
+GROUP BY Book.Type HAVING Average_Price < 10) AS T1
+LEFT JOIN
+(SELECT Book.Type, AVG(Copy.Price)  AS 'Average_Price'
+FROM Book
+JOIN Copy
+ON Book.BookCode = Copy.BookCode
+WHERE Book.Paperback = 'Y'
+GROUP BY Book.Type) AS T2
+ON T1.Type = T2.Type
+UNION
+SELECT T1.Type, T1.Average_Price AS 'Average_Price'
+FROM
+(SELECT Book.Type, AVG(Copy.Price)  AS 'Average_Price'
+FROM Book
+JOIN Copy
+ON Book.BookCode = Copy.BookCode
+WHERE Book.Paperback = 'Y'
+GROUP BY Book.Type ) AS T1
+LEFT JOIN
+(SELECT Book.Type, AVG(Copy.Price)  AS 'Average_Price'
+FROM Book
+JOIN Copy
+ON Book.BookCode = Copy.BookCode
+GROUP BY Book.Type HAVING Average_Price < 10) AS T2
+ON T1.Type = T2.Type;
 
 /** What is the most expensive book in the database? **/
 SELECT DISTINCT Book.BookCode, Book.Title, Copy.Price
@@ -143,12 +169,12 @@ WHERE Copy.Price = (SELECT MIN(Copy.Price)
 /** List the name of each publisher that’s located in New York **/
 SELECT PublisherName
 FROM Publisher
-WHERE City LIKE '% New York %';
+WHERE City LIKE '%New York%';
 
 /** List the name of each publisher that’s not located in New York **/
 SELECT PublisherName
 FROM Publisher
-WHERE City NOT LIKE '% New York %';
+WHERE City NOT LIKE '%New York%';
 
 /** List the title of each book published by Penguin USA **/
 SELECT Book.Title
@@ -280,6 +306,8 @@ price of $14.00 to $14.25. Use Select * query to show the result of the query. *
 UPDATE FictionCopies
 SET FictionCopies.Price = 14.25
 WHERE FictionCopies.Price = 14;
+
+/** Show Output. **/
 SELECT *
 FROM FictionCopies;
 
@@ -287,6 +315,8 @@ FROM FictionCopies;
 DELETE
 FROM FictionCopies
 WHERE Quality LIKE 'Poor';
+
+/** Show Output. **/
 SELECT *
 FROM FictionCopies;
 
@@ -301,6 +331,8 @@ ON Copy.BookCode = Book.BookCode
 JOIN Publisher
 ON Book.PublisherCode = Publisher.PublisherCode
 WHERE Publisher.PublisherName LIKE 'Penguin USA';
+
+/** Show Output. **/
 SELECT * FROM PenguinBooks;
 
 /** Create a view named Paperback. It consists of the book code, book title, publisher name, branch number,
@@ -313,6 +345,8 @@ ON Copy.BookCode = Book.BookCode
 JOIN Publisher
 ON Book.PublisherCode = Publisher.PublisherCode
 WHERE Book.Paperback = 'Y';
+
+/** Show Output. **/
 SELECT * FROM PaperBack;
 
 /** Create a view named BookAuthor. It consists of the book code, book title, book type, author number,
@@ -325,36 +359,50 @@ JOIN Wrote
 ON Book.BookCode = Wrote.BookCode
 JOIN Author
 ON Wrote.AuthorNum = Author.AuthorNum;
+
+/** Show Output. **/
 SELECT * FROM BookAuthor;
 
 /** Create an index named BookIndex1 on the PublisherName field in the Publisher table **/
 CREATE INDEX BookIndex1
 ON Publisher (PublisherName);
+
+/** Show Output. **/
 SHOW INDEX FROM Publisher;
 
 /** Create an index named BookIndex2 on the Type field in the Book table **/
 CREATE INDEX BookIndex2
 ON Book (Type);
+
+/** Show Output. **/
 SHOW INDEX FROM Book;
 
 /** Create an Index named BookIndex3 on the BookCode and Type fields in the Book table and list the book
 code in descending order **/
 CREATE INDEX BookIndex3
 ON Book (BookCode, Type);
+
+/** Show Output. **/
 SELECT BookCode FROM Book ORDER BY BookCode DESC;
 
 /** Add to the Book table a new character field named Classic that is one character in length. **/
 ALTER TABLE Book
 ADD COLUMN Classic CHAR(1);
+
+/** Show Output. **/
 SHOW COLUMNS FROM Book;
 
 /** Change the Classic field in the Book table to Y for the Book title ‘The Grapes of Wrath’ **/
 UPDATE Book
 SET Classic = 'Y'
 WHERE Title = 'The Grapes of Wrath';
+
+/** Show Output. **/
 SELECT * FROM Book WHERE Title = 'The Grapes of Wrath';
 
 /** Change the length of the Title field in the Book table to 60. Show working SQL statement. **/
 ALTER TABLE Book
 MODIFY COLUMN Title CHAR(60);
+
+/** Show Output. **/
 SHOW COLUMNS FROM Book;
