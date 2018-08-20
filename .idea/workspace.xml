@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/output_files/SQL1.StephenWagstaff.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/output_files/StephenWagstaff.FINAL.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/output_files/StephenWagstaff.SQL.A2.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/output_files/StephenWagstaff.SQL.A3.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Final_Exam_Script.sql" afterPath="$PROJECT_DIR$/MySql_assignments/script_files/sql_scripts/Final_Exam_Script.sql" />
-    </list>
+    <list default="true" id="173b8f58-0a68-4b17-af84-f5fedafee0e5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
